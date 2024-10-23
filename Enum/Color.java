@@ -2,13 +2,12 @@ package Classes.GeoShapes.Enum;
 
 public enum Color {
     
-    BLACK,
-    CIANO,
-    YELLOW,
     RED,
-    BLUE,
     GREEN,
+    YELLOW,
+    BLUE,
     MAGENTA,
-    WHITE
-
+    CIANO,
+    WHITE 
+    
 }

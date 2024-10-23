@@ -1,50 +1,45 @@
 package Classes.GeoShapes.Entities;
 
-import Classes.GeoShapes.Enum.Color;
 
 public class Trapezio extends Shape {
     
+    private String id = "TRAPEZIO";
     private Double baseMenor;
     private Double baseMaior;
     private Double altura;
+    
+
+    public Trapezio() {
+        super();
+    }
 
 
-    public Trapezio(Color cor, Double baseMenor, Double baseMaior, Double altura) {
-        super(cor);
+    public Trapezio(Double baseMenor, Double baseMaior, Double altura) {
         this.baseMenor = baseMenor;
         this.baseMaior = baseMaior;
         this.altura = altura;
     }
+
+
 
 
     public Double getBaseMenor() {
         return baseMenor;
     }
 
-
-    public void setBaseMenor(Double baseMenor) {
-        this.baseMenor = baseMenor;
+    public String getId() {
+        return id;
     }
-
 
     public Double getBaseMaior() {
         return baseMaior;
     }
-
-
-    public void setBaseMaior(Double baseMaior) {
-        this.baseMaior = baseMaior;
-    }
-
 
     public Double getAltura() {
         return altura;
     }
 
 
-    public void setAltura(Double altura) {
-        this.altura = altura;
-    }
 
     
     @Override
@@ -52,5 +47,17 @@ public class Trapezio extends Shape {
 
         return ((baseMaior + baseMenor) * altura) / 2;
     }
+
+    @Override
+    public String titulo(){
+
+        String abertura = "# CALCULANDO A AREA DO ";
+        String fechamento = " #";
+        return abertura + id + fechamento;
+    }
     
+    @Override
+    public String resultado(){
+        return "Área do " + id + " = " + String.format("%.2f" , area());
+    }
 }

@@ -1,19 +1,33 @@
 package Classes.GeoShapes.Entities;
 
-import Classes.GeoShapes.Enum.Color;
 
 public class Quadrado extends Shape {
     
+    private String id = "QUADRADO";
     private Double lado;
 
-    public Quadrado(Color cor, Double lado) {
-        super(cor);
+    
+
+    public Quadrado() {
+        super();
+    }
+
+    public Quadrado(Double lado) {
         this.lado = lado;
     }
+
+
+
+
 
     public Double getLado() {
         return lado;
     }
+
+    public String getId() {
+        return id;
+    }
+    
 
     public void setLado(Double lado) {
         this.lado = lado;
@@ -22,5 +36,18 @@ public class Quadrado extends Shape {
     @Override
     public double area(){
         return lado * lado;
+    }
+
+    @Override
+    public String titulo(){
+
+        String abertura = "# CALCULANDO A AREA DO ";
+        String fechamento = " #";
+        return abertura + id + fechamento;
+    }
+
+    @Override
+    public String resultado(){
+        return "Área do " + id + " = " + String.format("%.2f" , area());
     }
 }
