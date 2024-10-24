@@ -14,9 +14,9 @@ public class Retangulo extends Shape {
         super();
     }
 
-    public Retangulo(Double altura, double base) {
-        this.altura = altura;
+    public Retangulo(Double base, double altura) {
         this.base = base;
+        this.altura = altura;
     }
 
 
