@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Quadrado extends Shape {
+public class Quadrado extends AbstractShape {
     
     private String id = "QUADRADO";
     private Double lado;

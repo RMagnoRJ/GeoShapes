@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Trapezio extends Shape {
+public class Trapezio extends AbstractShape {
     
     private String id = "TRAPEZIO";
     private Double baseMenor;

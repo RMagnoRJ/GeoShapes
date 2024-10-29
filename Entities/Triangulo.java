@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Triangulo extends Shape {
+public class Triangulo extends AbstractShape {
     
     private String id = "TRIANGULO";
     private Double base;

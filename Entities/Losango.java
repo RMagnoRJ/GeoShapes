@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Losango extends Shape {
+public class Losango extends AbstractShape {
 
     private String id = "LOSANGO";
     private Double diagonalMaior;

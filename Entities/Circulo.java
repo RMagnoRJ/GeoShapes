@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Circulo extends Shape {
+public class Circulo extends AbstractShape {
     
     private String id = "CIRCULO";
     private Double raio;

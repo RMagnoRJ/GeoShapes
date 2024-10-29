@@ -1,7 +1,7 @@
 package Classes.GeoShapes.Entities;
 
 
-public class Retangulo extends Shape {
+public class Retangulo extends AbstractShape {
     
     private String id = "RETANGULO";
     private Double altura;
