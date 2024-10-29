@@ -192,6 +192,33 @@ public class GeneralFunctions {
         return numConv;
     }
 
+    public Double recebeDouble (){
+
+        Double numConv = - 999.9;
+        boolean testaNum = true;
+
+        while (testaNum == true){
+
+            System.out.print(" ");
+            String teste = inn.nextLine();
+
+            try {
+                numConv = Double.parseDouble(teste);
+                if (numConv != 999.9){
+                    testaNum = false;
+                }
+                //return numConv;
+            } catch (NumberFormatException e) {
+                System.out.print("\n\n### ERROR ### \nOperação INVÁLIDA!\n" +
+                                   "Você deve digitar apenas NÚMEROS!\n"+
+                                   "Ex.: 8.9, 9, 10.742, 0, -9.3\n"+">");
+                teste = "";
+            }
+        }
+        System.out.println();
+        return numConv;
+    }
+
     public void pause(String letreiro, char etc, int repete, int tempo) throws InterruptedException{
         
         System.out.print(letreiro);
@@ -204,7 +231,7 @@ public class GeneralFunctions {
     }
 
     public void waitLine(){
-        System.out.print("\nPressione qualquer tecla para continuar... ");
+        System.out.print("Pressione qualquer tecla para continuar... ");
         @SuppressWarnings("unused")
         String wait = inn.nextLine();
         System.out.println();
