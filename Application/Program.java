@@ -36,7 +36,7 @@ public class Program {
             System.out.println(  "      **********");
 
             System.out.print("\nEscolha uma figura geométrica\npara calcular a área:\n" +
-            "[1] Quadrado\n" +
+            "\n[1] Quadrado\n" +
             "[2] Retângulo\n" +
             "[3] Trapézio\n" +
             "[4] Círculo\n" +
@@ -57,7 +57,7 @@ public class Program {
                     // quadrado
                     Shape quadrado = new Quadrado();
                     quadrado.titulo();
-                    System.out.print("Digite o tamanho do lado: ");
+                    System.out.print("\nDigite o tamanho do lado: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     quadrado = new Quadrado(num1);
                     colorido = new ColorPalette(trocaCor.mix(), quadrado.resultado());
@@ -68,7 +68,7 @@ public class Program {
                     // retângulo
                     Shape retangulo = new Retangulo();
                     retangulo.titulo();
-                    System.out.print("Digite o tamanho da base: ");
+                    System.out.print("\nDigite o tamanho da base: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     System.out.print("Digite o tamanho da altura: ");
                     num2 = inn.nextDouble(); inn.nextLine();
@@ -81,7 +81,7 @@ public class Program {
                     // trapézio
                     Shape trapezio = new Trapezio();
                     trapezio.titulo();
-                    System.out.print("Digite o tamanho da base menor: ");
+                    System.out.print("\nDigite o tamanho da base menor: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     System.out.print("Digite o tamanho da base maior: ");
                     num2 = inn.nextDouble(); inn.nextLine();
@@ -96,7 +96,7 @@ public class Program {
                     // circulo
                     Shape circulo = new Circulo();
                     circulo.titulo();
-                    System.out.print("Digite o tamanho do raio: ");
+                    System.out.print("\nDigite o tamanho do raio: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     circulo= new Circulo(num1);
                     colorido = new ColorPalette(trocaCor.mix(), circulo.resultado());
@@ -107,7 +107,7 @@ public class Program {
                     // triangulo
                     Shape triangulo = new Triangulo();
                     triangulo.titulo();
-                    System.out.print("Digite o tamanho da base: ");
+                    System.out.print("\nDigite o tamanho da base: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     System.out.print("Digite o tamanho da altura: ");
                     num2 = inn.nextDouble(); inn.nextLine();
@@ -120,7 +120,7 @@ public class Program {
                     // losango
                     Shape losango = new Losango();
                     losango.titulo();
-                    System.out.print("Digite o tamanho da diagonal maior: ");
+                    System.out.print("\nDigite o tamanho da diagonal maior: ");
                     num1 = inn.nextDouble(); inn.nextLine();
                     System.out.print("Digite o tamanho da diagonal menor: ");
                     num2 = inn.nextDouble(); inn.nextLine();
@@ -132,6 +132,9 @@ public class Program {
                 case 7:
                     // sair
                     on = false;
+                    System.out.println("\n********************");
+                    System.out.println(">>> VOLTE SEMPRE <<<");
+                    System.out.println("********************\n");
                     break;
             }
         }

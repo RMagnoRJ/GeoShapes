@@ -57,8 +57,9 @@ public class ColorPalette {
         } else if (getCor() == Color.WHITE) {
             codeColor = white;
         }
-
-        System.out.println(codeColor + resultado + code);
+        System.out.println("\n" + codeColor + "**************************" + code);
+        System.out.println(" " + codeColor + resultado + code);
+        System.out.println(codeColor + "**************************" + code + "\n");
     }
 
 
